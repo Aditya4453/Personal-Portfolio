@@ -1,0 +1,405 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: "Outfit", sans-serif;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(92,151,163,1) 100%); */
+    color: white;
+    overflow-x: hidden;
+}
+
+
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.817);
+    transition: background-color 0.5s ease, opacity 0.5s ease;
+    /* Smooth transition */
+
+}
+
+#header div {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px;
+    padding: 10px;
+}
+
+#header div h1 {
+    font-size: 25px;
+}
+
+.navbar {
+    display: flex;
+    align-content: right;
+    justify-content: center;
+    gap: 1.4rem;
+    list-style: none;
+}
+
+.navbar li a {
+    padding: 5px;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    /* position: relative;
+    transition: 0.35s ease; */
+}
+
+.navbar li a:hover {
+    padding: 5px 10px;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    background-color: black;
+    border-radius: 11%;
+    /* position: relative;
+    transition: 0.35s ease; */
+}
+
+
+section {
+    height: 100%;
+    width: 100%;
+
+}
+
+
+
+#home {
+    background-image: url(homebg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 99vw;
+    z-index: 1;
+}
+
+.homes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 237px;
+}
+
+.homes h1 {
+    font-size: 3rem;
+}
+
+#about {
+    padding: 70px 20px;
+    margin: 10rem 0px;
+    /* background: rgb(2,0,36); */
+    /* background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(92,151,163,1) 100%); */
+}
+
+.about-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    /* border: 2.5px solid white; */
+    border-radius: 10px;
+    padding: 5rem;
+    /* margin: 50px 0px;  */
+    /* box-shadow: 1px 3px 3px white; */
+}
+
+.about_sec {
+    padding: 10px;
+    height: auto;
+    width: 740px;
+}
+
+.about_left {
+    display: flex;
+    flex-direction: column;
+    gap: 85px;
+    /* background-color: #5C97A3; */
+
+}
+
+.about_right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: #5C97A3; */
+
+    /* justify-content: center; */
+}
+
+.about_right h2 {
+    font-size: 2rem;
+}
+
+.about_right div {
+    margin-top: 36px;
+}
+
+.about_right div p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 14px 0px;
+}
+
+img {
+    width: 230px;
+    height: 300px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.intro_1 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro_2 li {
+    display: flex;
+
+    gap: 20px;
+    margin: 10px 0px;
+}
+
+
+#services {
+    margin: 210px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: rgb(2,0,36); */
+/* background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(92,151,163,1) 100%); */
+}
+
+#services h1 {
+    font-size: 5rem;
+}
+
+.services-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.services_grid {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    margin: 80px auto;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+
+}
+
+.services_card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    border-radius: 10px;
+    padding: 25px;
+    border: 2px solid white;
+}
+
+.services_img {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    background-color: #ffffff0d;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    border: 2px solid white;
+}
+
+.services-page div i {
+    transform: scale(0.9);
+}
+
+.services_card p {
+    text-align: center;
+}
+
+#contact {
+    /* background: rgb(2,0,36); */
+    /* background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(92,151,163,1) 100%);     */
+    justify-content: center; 
+    align-items: center;
+    display: flex;
+}
+
+.contact_page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+}
+
+.contact_details {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    gap: 20px;
+}
+
+.contact_details h1 {
+    font-size: 4rem;
+}
+
+
+.location-display {
+    margin: 20px;
+    border: 10px solid white;
+
+}
+
+.location-display iframe {}
+
+.contact_links {
+    display: flex;
+    gap: 20px;
+    margin: 10px;
+}
+
+.contact_links a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 40%;
+}
+
+.footer-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .about-page {
+        flex-direction: column;
+        padding: 20px;
+
+    }
+
+    #about {
+        padding: 70px 20px;
+        margin: 0;
+        height: auto;
+    }
+
+    #services {
+        margin-top: 50px;
+        padding: 50px 20px;
+        height: auto;
+    }
+
+    .about_sec {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .homes {
+        padding: 100px 20px;
+    }
+
+    .services_grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .services_card {
+        width: 100%;
+        text-align: center;
+    }
+
+    #contact {
+        height: auto;
+    }
+
+    .contact_page {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    iframe {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.body::-webkit-scrollbar {
+    display: none;
+}
+
+
