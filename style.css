@@ -8,6 +8,7 @@
 
 body {
     font-family: "Outfit", sans-serif;
+    
     height: 100vh;
     background: rgb(0, 0, 0);
     /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(92,151,163,1) 100%); */
@@ -40,7 +41,7 @@ body {
     /* background-color: rgba(0, 0, 0, 0.817); */
     transition: background-color 0.5s ease, opacity 0.5s ease;
     /* Smooth transition */
-
+    z-index: 1;
 }
 
 #header div {
@@ -50,11 +51,11 @@ body {
     padding: 10px;
 }
 
-#header div h1 {
+.h11{
     font-size: 25px;
     padding: 16px 15px 15px 15px;
     border-radius: 15px;
-    background: linear-gradient(to right, #003896 -88%, #000000 100%);
+    font-weight: bolder;
 }
 
 
@@ -80,16 +81,16 @@ body {
     transition: 0.35s ease; */
 }
 
-/* .navbar li a:hover {
-    padding: 5px 10px;
-    margin: 10px;
+.navbar li a:hover ,
+.navbar li a.active{
     text-decoration: none;
-    font-size: 18px;
-    color: #000000;
-    background-color: rgba(255, 255, 255, 0.681) ;  
-      border-radius: 8%;
-
-} */
+    
+    color: #000000;  
+    border: 2px solid #04e2ff;
+    background-color: #04e2ff;
+    border-radius: 40px;
+    padding: 10px;
+}
 
 
 section {
@@ -114,9 +115,13 @@ section {
 #datetime{
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 20px;
+    flex-direction: column;
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    background: linear-gradient(to right, #003896 -135%, #000000 100%);
+    border-radius: 12px;
+    padding: 12px;
 }
 #date{
     color: white;
